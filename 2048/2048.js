@@ -3,7 +3,7 @@ var mainPencil;
 var canvasWidth;
 var canvasHeight;
 var canvasColor;
-var speed = 20;
+var speed = 21;
 var gridArr = [];
 var active = true;
 var gridSize = 4;
