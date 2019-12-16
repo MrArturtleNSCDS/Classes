@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Poker Hands</title>
+        <link href="cardPNG/CSicon.png" rel="icon">
+        <link rel='stylesheet' type='text/css' href='poker.css'>
+        <link href="https://fonts.googleapis.com/css?family=Coda:800|Righteous" rel="stylesheet">
+        <script src='js/jquery-3.2.1.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    </head>
+    <body>
+        <div id='dealer' class='playerWrapper' player='1'>
+            <div class='playerHandType'></div>
+            <div class='cardPlaceHolder'></div>
+            <div class='cardsWrapper'></div>
+        </div>
+        <div id='player0' class='playerWrapper' player='0'>
+            <div class='playerHandType'></div>
+            <div class='cardPlaceHolder'></div>
+            <div class='cardsWrapper'></div>        
+        </div>
+        <div id='buttonWrapper'>
+            <div id='startButton' class='button' startGame>START</div>
+            <div id='gameButtons'>
+                <div id='hitButton' class='button'>HIT</div>
+                <div id='stayButton' class='button'>STAY</div>
+            </div>
+        </div>
+        <div id='winnerWrapper'>
+            <div id='winnerModal'>
+                <div id='innerModal'>
+                    <div id='message'></div>
+                    <div id='restart' class='button' startGame>RESTART</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src='js/pokerAnimated.js'></script>
+</html>

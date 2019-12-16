@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel='stylesheet' href='poker.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Ubuntu&display=swap" rel="stylesheet">
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+</head>
+<body>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Hand</th>
+                <th>Distinct hands</th>
+                <th>Frequency</th>
+                <th>Probability</th>
+                <th>Actual Hands</th>
+                <th>Actual Percentage</th>
+                <th>Hand Difference</th>
+                <th>Percentage Difference</th>
+            </tr>
+            <tr>
+                <th>Royal flush</th>
+                <td>1</td>
+                <td id='royalFrequency'>4</td>
+                <td id='royalPerc'>0.000154%</td>
+                <td id='numRoyalFlush'></td>
+                <td id='royalFlush'></td>
+                <td id='diffRoyalFlush'></td>
+                <td id='diffRoyalFlushPerc'></td>
+            </tr>
+            <tr>
+                <th>Straight flush <h1>(excluding royal flush)</h1></th>
+                <td>9</td>
+                <td id='straightFlushFrequency'>36</td>
+                <td id='straightFlushPerc'>0.00139%</td>
+                <td id='numStraightFlush'></td>
+                <td id='straightFlush'></td>
+                <td id='diffStraightFlush'></td>
+                <td id='diffStraightFlushPerc'></td>
+            </tr>
+            <tr>
+                <th>Four of a kind</th>
+                <td>156</td>
+                <td id='fourKindFrequency'>624</td>
+                <td id='fourKindPerc'>0.0240%</td>
+                <td id='numFourKind'></td>
+                <td id='fourKind'></td>
+                <td id='diffFourKind'></td>
+                <td id='diffFourKindPerc'></td>
+            </tr>
+            <tr>
+                <th>Full house</th>
+                <td>156</td>
+                <td id='fullHouseFrequency'>3744</td>
+                <td id='fullHousePerc'>0.1441%</td>
+                <td id='numFullHouse'></td>
+                <td id='fullHouse'></td>
+                <td id='diffFullHouse'></td>
+                <td id='diffFullHousePerc'></td>
+            </tr>
+            <tr>
+                <th>Flush <h1>(excluding royal flush and straight flush)</h1></th>
+                <td>1277</td>
+                <td id='flushFrequency'>5108</td>
+                <td id='flushPerc'>0.1965%</td>
+                <td id='numFlush'></td>
+                <td id='flush'></td>
+                <td id='diffFlush'></td>
+                <td id='diffFlushPerc'></td>
+            </tr>
+            <tr>
+                <th>Straight <h1>(excluding royal flush and straight flush)</h1></th>
+                <td>10</td>
+                <td id='straightFrequency'>10200</td>
+                <td id='straightPerc'>0.3925%</td>
+                <td id='numStraight'></td>
+                <td id='straight'></td>
+                <td id='diffStraight'></td>
+                <td id='diffStraightPerc'></td>
+            </tr>
+            <tr>
+                <th>Three of a kind</th>
+                <td>858</td>
+                <td id='threeKindFrequency'>54912</td>
+                <td id='threeKindPerc'>2.1128%</td>
+                <td id='numThreeKind'></td>
+                <td id='threeKind'></td>
+                <td id='diffThreeKind'></td>
+                <td id='diffThreeKindPerc'></td>
+            </tr>
+            <tr>
+                <th>Two pair</th>
+                <td>858</td>
+                <td id='twoPairFrequency'>123552</td>
+                <td id='twoPairPerc'>4.7539%</td>
+                <td id='numTwoPair'></td>
+                <td id='twoPair'></td>
+                <td id='diffTwoPair'></td>
+                <td id='diffTwoPairPerc'></td>
+            </tr>
+            <tr>
+                <th>One pair</th>
+                <td>2860</td>
+                <td id='pairFrequency'>1098240</td>
+                <td id='pairPerc'>42.2569%</td>
+                <td id='numPair'></td>
+                <td id='pair'></td>
+                <td id='diffPair'></td>
+                <td id='diffPairPerc'></td>
+            </tr>
+            <tr>
+                <th>High card</th>
+                <td>1277</td>
+                <td id='highCardFrequency'>1302540</td>
+                <td id='highCardPerc'>50.1177%</td>
+                <td id='numHighCard'></td>
+                <td id='highCard'></td>
+                <td id='diffHighCard'></td>
+                <td id='diffHighCardPerc'></td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td>7462</td>
+                <td>2598960</td>
+                <td>100%</td>
+                <td id='totalHands'></td>
+                <td id='totalPercentages'></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src='fileSaver.js'></script>
+<script src='poker.js'></script>
+</html>

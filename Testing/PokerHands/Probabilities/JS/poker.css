@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+table{
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+tr{
+    border-top: 1px solid #285396;
+    text-align: right;
+}
+
+td{
+    font-family: "Roboto Mono";
+    font-size: 12px;
+}
+
+th{
+    background-color: #3a79da;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    font-family: Ubuntu;
+}
+
+td,th{
+    padding: 4px;
+}
+
+h1{
+    font-size: 9px;
+    color: #92b9f7
+}

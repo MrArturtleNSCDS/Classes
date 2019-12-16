@@ -1,0 +1,147 @@
+@CHARSET "UTF-8";
+
+html,body{
+    height: 100%;
+    overflow:hidden;
+}
+
+body{
+    background: #095807 url('images/nscdsLogoTr.png') no-repeat center center;
+}
+
+#buttonWrapper{
+    position:absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+#gameButtons{
+    display: none;
+}
+
+.button{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Coda', cursive;
+    font-size: 24px;
+    border-radius: 8px;
+    border:1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+[startGame]{
+    background-color: #0a0;
+}
+
+#hitButton{
+    background-color: #f90;
+}
+
+#stayButton{
+    background-color: #800;
+}
+
+.playerWrapper{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-250px);
+    width: 300px;
+    height: 212px;
+}
+
+.playerHandType{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #fff;
+    color: #095807;
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cardPlaceHolder{
+    border: 2px solid #fff;
+    border-radius: 4px;
+    width: 150px;
+    height: 208px;
+    position: absolute;
+    left: 160px;
+    top: 0;
+}
+
+.cardsWrapper{
+    width: 150px;
+    height: 202px;
+    position: absolute;
+    top:50%;
+    left: 310px;
+    transform: translateY(-50%);
+}
+
+.card{
+    height: 200px;
+    margin-left: -120px;
+    border: 1px solid #aaa;
+    border-radius: 12px;
+}
+
+#dealer{
+    top: 10px;
+}
+
+#player0{
+    bottom: 70px;
+}
+
+#winnerWrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+    display: none;
+}
+
+#winnerModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 375px;
+    height: 267px;
+    background: url("cardPNG/back-90.png") no-repeat;
+    background-size: contain;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
+}
+
+#innerModal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#message{
+    color: #fff;
+    background-color: rgba(0,0,0,.8);
+    padding: 5px;
+    border-radius: 8px;
+    font-family: Righteous;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
