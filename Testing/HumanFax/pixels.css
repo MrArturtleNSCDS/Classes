@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+/* V4 */
+
+#grid{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #000;
+}
+
+.pixel{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#colorPalette{
+    padding: 10px;
+    background-color: black;
+    display: inline-block;
+}
+
+.colorBox{
+    width: 61px;
+    height: 61px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px dashed #555;
+}
+
+#color1{
+    background-color: white;
+}
+
+#color2{
+    background-color: black;
+}

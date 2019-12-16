@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+/* V4 */
+
+#grid{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #000;
+    position:relative;
+}
+
+.pixel{
+    background-color: #000;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#colorPalette{
+    padding: 10px;
+    background-color: white;
+    border: 3px solid #888;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.colorBox{
+    width: 61px;
+    height: 61px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px dashed #555;
+    transition: border-radius .5s;
+}
+
+.selected{
+    border-radius: 50%;
+}
+
+#color1{
+    background-color: white;
+}
+
+#color2{
+    background-color: black;
+}
+
+#color3{
+    background-color: red;
+}
+#color4{
+    background-color: #08c;
+}
+#color5{
+    background-color: #0a0;
+}
+#color6{
+    background-color: #f90;
+}
+#color7{
+    background-color: #800;
+}
+#color8{
+    background-color: #008;
+}
+
